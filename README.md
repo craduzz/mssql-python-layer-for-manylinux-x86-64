@@ -2,7 +2,7 @@
 
 An AWS Lambda layer that packages [`mssql-python`](https://pypi.org/project/mssql-python/) (Microsoft's official SQL Server driver for Python) together with the Linux system libraries it needs. The Lambda runtime doesn't ship those libraries.
 
-Without this layer, importing and connecting with `mssql-python` on Lambda fails with:
+Without this layer, importing and connecting with `mssql-python` on an AWS Lambda fails with:
 
 ```
 mssql_python.exceptions.OperationalError: Driver Error: Connection operation failed;
